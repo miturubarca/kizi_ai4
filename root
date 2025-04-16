@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生成AIで記事作成！キックオフミーティングスライド</title>
+    <style>
+        body {
+            font-family: "Hiragino Maru Gothic ProN", "Rounded Mplus 1c", "Quicksand", sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        .slide-container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .slide {
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            min-height: 500px;
+        }
+        
+        .slide-1 { background-color: #fff9fc; }
+        .slide-2 { background-color: #f0f9ff; }
+        .slide-3 { background-color: #f0fff4; }
+        .slide-4 { background-color: #fff9f0; }
+        .slide-5 { background-color: #f5f0ff; }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: #ff6b9d;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            color: #ff6b9d;
+            margin-bottom: 1.5rem;
+            border-bottom: 3px dotted #ffcce0;
+            padding-bottom: 10px;
+        }
+        
+        p {
+            font-size: 1.25rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        
+        .content {
+            flex: 1;
+        }
+        
+        .emoji-icon {
+            font-size: 2.5rem;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        
+        .tool-box {
+            border: 2px solid #b5e8f7;
+            border-radius: 15px;
+            padding: 15px;
+            margin: 20px 0;
+            background-color: rgba(181, 232, 247, 0.1);
+        }
+        
+        .tool-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .tool-icon {
+            font-size: 2rem;
+            margin-right: 15px;
+            width: 40px;
+            text-align: center;
+        }
+        
+        .feature-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        
+        .feature-item {
+            width: 48%;
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+        
+        .speech-bubble {
+            position: relative;
+            background: #f2f5ff;
+            border-radius: 15px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .speech-bubble:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 20px;
+            width: 0;
+            height: 0;
+            border: 15px solid transparent;
+            border-bottom-color: #f2f5ff;
+            border-top: 0;
+            margin-left: -15px;
+            margin-top: -15px;
+        }
+        
+        .highlight {
+            background: linear-gradient(transparent 60%, #ffcce0 60%);
+            font-weight: bold;
+        }
+        
+        .page-number {
+            text-align: right;
+            font-size: 1rem;
+            color: #999;
+            margin-top: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .slide {
+                padding: 25px;
+                min-height: auto;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            p {
+                font-size: 1rem;
+            }
+            
+            .feature-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <!-- スライド1: タイトル -->
+        <div class="slide slide-1">
+            <div class="content">
+                <h1>✨ 生成AIで記事作成！<br>はじめの一歩 ✨</h1>
+                <div style="text-align: center; margin: 50px 0;">
+                    <span style="font-size: 8rem;">🤖✒️📝</span>
+                </div>
+                <p style="text-align: center; font-size: 1.5rem;">
+                    〜 みんなで楽しく、かしこく活用しよう 〜
+                </p>
+            </div>
+            <div class="page-number">1/5</div>
+        </div>
+        
+        <!-- スライド2: 生成AIの基本概念 -->
+        <div class="slide slide-2">
+            <div class="content">
+                <h2><span class="emoji-icon">💡</span> 生成AIってなあに？</h2>
+                
+                <p>
+                    生成AI（せいせいエーアイ）は、<span class="highlight">「たくさんの情報から学んで、新しいものを作り出せるコンピュータ」</span>のことです。
+                </p>
+                
+                <div class="speech-bubble">
+                    <p>
+                        例えば、友だちとのLINEのやりとりを想像してみてください。友だちの質問に答えたり、アドバイスをしたり。生成AIも同じように、あなたの質問に答えてくれるんです！
+                    </p>
+                </div>
+                
+                <p>
+                    生成AIは、本や記事、ウェブサイトなど<span class="highlight">とっても多くの文章を読んで学習して</span>います。だから、いろんな質問に答えたり、あなたの代わりに文章を書いたりできるんです。
+                </p>
+                
+                <p>
+                    例えると…「とっても賢いお手伝いさん」が、あなたのそばにいるようなもの✨
+                </p>
+            </div>
+            <div class="page-number">2/5</div>
+        </div>
+        
+        <!-- スライド3: 有名な生成AIツール紹介 -->
+        <div class="slide slide-3">
+            <div class="content">
+                <h2><span class="emoji-icon">🔍</span> いろんな生成AIツール</h2>
+                
+                <p>
+                    今、世の中にはたくさんの生成AIがあります。みんなそれぞれ得意なことが少しずつ違います！
+                </p>
+                
+                <div class="tool-box">
+                    <div class="tool-item">
+                        <div class="tool-icon">🟢</div>
+                        <div>
+                            <h3>ChatGPT</h3>
+                            <p>一番有名な生成AI。会話形式で質問したり、記事を書いてもらったりできます。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tool-item">
+                        <div class="tool-icon">🟣</div>
+                        <div>
+                            <h3>Claude</h3>
+                            <p>親しみやすい性格で、長い文章も読み込めます。丁寧な回答が得意です。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tool-item">
+                        <div class="tool-icon">🔵</div>
+                        <div>
+                            <h3>Gemini</h3>
+                            <p>Googleが作った生成AI。検索と連携して最新情報も教えてくれます。</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <p>
+                    どれも<span class="highlight">基本は無料で使える</span>ものがあり、スマホやパソコンで簡単に始められますよ！
+                </p>
+            </div>
+            <div class="page-number">3/5</div>
+        </div>
+        
+        <!-- スライド4: AIが得意なこと・苦手なこと -->
+        <div class="slide slide-4">
+            <div class="content">
+                <h2><span class="emoji-icon">🔍</span> AIの得意なこと・苦手なこと</h2>
+                
+                <div class="feature-box">
+                    <div class="feature-item" style="background-color: #e6fff2; border-left: 5px solid #4cd97b;">
+                        <h3>🌟 得意なこと</h3>
+                        <ul>
+                            <li>素早く文章を書くこと</li>
+                            <li>たくさんのアイデアを出すこと</li>
+                            <li>難しい言葉をわかりやすく説明</li>
+                            <li>文章の書き方の提案</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature-item" style="background-color: #fff2f5; border-left: 5px solid #ff9db0;">
+                        <h3>⚠️ 苦手なこと</h3>
+                        <ul>
+                            <li>最新の情報を知らないこと</li>
+                            <li>事実と違うことを言うことも</li>
+                            <li>感情や経験を理解すること</li>
+                            <li>画像やデータの詳しい分析</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="speech-bubble">
+                    <p>
+                        <b>例えば…</b><br>
+                        「猫の飼い方について教えて」→得意！基本的な知識を教えてくれます<br>
+                        「昨日起きた地震について詳しく」→苦手！最新情報は知らないかも
+                    </p>
+                </div>
+                
+                <p>
+                    AIが書いた内容は、<span class="highlight">必ず自分でチェックする</span>ことが大切です。お手伝いさんとして活用するのがいいですね！
+                </p>
+            </div>
+            <div class="page-number">4/8</div>
+        </div>
+        
+        <!-- スライド5: 記事作成でAIを活用するメリット -->
+        <div class="slide slide-5">
+            <div class="content">
+                <h2><span class="emoji-icon">✨</span> AIで記事作成するといいことがいっぱい！</h2>
+                
+                <div class="feature-box">
+                    <div class="feature-item" style="background-color: #f0f5ff; width: 100%;">
+                        <h3>⏱️ 時間の節約になる</h3>
+                        <p>記事の下書きや構成を数秒〜数分で作ってくれます。ゼロから考える手間が減ります！</p>
+                    </div>
+                    
+                    <div class="feature-item" style="background-color: #fff8e6;">
+                        <h3>💪 ライティングが苦手でも大丈夫</h3>
+                        <p>文章が苦手な人でも、AIがサポートしてくれるので安心です。</p>
+                    </div>
+                    
+                    <div class="feature-item" style="background-color: #f3e6ff;">
+                        <h3>🎨 いろんな表現を学べる</h3>
+                        <p>AIの表現方法を参考にして、自分の文章力もアップ！</p>
+                    </div>
+                </div>
+                
+                <div class="speech-bubble">
+                    <p>
+                        AIはあなたの「アイデアを形にする相棒」です。最終的に記事に命を吹き込むのは、やっぱり<span class="highlight">あなた自身</span>の感性や経験です✨
+                    </p>
+                </div>
+            </div>
+            <div class="page-number">5/8</div>
+        </div>
+
+        <!-- スライド6: AIを使った記事作成の流れ -->
+        <div class="slide slide-1">
+            <div class="content">
+                <h2><span class="emoji-icon">📝</span> AIで記事を作る流れ</h2>
+                
+                <div style="display: flex; flex-direction: column; gap: 15px; margin: 20px 0;">
+                    <div style="display: flex; align-items: center; background-color: #f2f5ff; padding: 15px; border-radius: 10px;">
+                        <div style="font-size: 2rem; margin-right: 15px;">①</div>
+                        <div>
+                            <h3>テーマを決める</h3>
+                            <p>どんな記事を書きたいか、目的や読者層を考えましょう</p>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; align-items: center; background-color: #f8f2ff; padding: 15px; border-radius: 10px;">
+                        <div style="font-size: 2rem; margin-right: 15px;">②</div>
+                        <div>
+                            <h3>AIに指示を出す</h3>
+                            <p>テーマや希望する内容、文体などを具体的に伝えましょう</p>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; align-items: center; background-color: #fff2fa; padding: 15px; border-radius: 10px;">
+                        <div style="font-size: 2rem; margin-right: 15px;">③</div>
+                        <div>
+                            <h3>結果を見直す</h3>
+                            <p>AIが生成した文章をチェックして修正点を考えましょう</p>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; align-items: center; background-color: #f2fff5; padding: 15px; border-radius: 10px;">
+                        <div style="font-size: 2rem; margin-right: 15px;">④</div>
+                        <div>
+                            <h3>自分の言葉で仕上げる</h3>
+                            <p>AIの文章をベースに、あなたらしさを加えて完成させましょう</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="speech-bubble">
+                    <p>
+                        AIは魔法の杖ではありません。<span class="highlight">あなたのアイデアと指示</span>があってこそ、素敵な記事ができあがります！
+                    </p>
+                </div>
+            </div>
+            <div class="page-number">6/8</div>
+        </div>
+        
+        <!-- スライド7: AIへの上手な指示の出し方 -->
+        <div class="slide slide-2">
+            <div class="content">
+                <h2><span class="emoji-icon">💬</span> AIへの上手な指示の出し方</h2>
+                
+                <p>
+                    AIに指示を出すときは、<span class="highlight">具体的に伝える</span>ことがポイントです！
+                </p>
+                
+                <div style="display: flex; margin: 20px 0; gap: 20px;">
+                    <div style="flex: 1; background-color: #ffe6e6; padding: 15px; border-radius: 10px;">
+                        <h3>❌ あいまいな指示</h3>
+                        <p style="font-style: italic; color: #777;">「料理の記事を書いて」</p>
+                        <p>→どんな料理？誰向け？どんな文体？</p>
+                    </div>
+                    
+                    <div style="flex: 1; background-color: #e6ffe6; padding: 15px; border-radius: 10px;">
+                        <h3>⭕ 具体的な指示</h3>
+                        <p style="font-style: italic; color: #777;">「小学生向けの簡単お弁当レシピの記事を、楽しい雰囲気で800字程度で書いて」</p>
+                        <p>→わかりやすい！</p>
+                    </div>
+                </div>
+                
+                <div class="tool-box">
+                    <h3>🌈 指示に含めるといい情報</h3>
+                    <ul>
+                        <li>読者層（誰に向けた記事か）</li>
+                        <li>文章の長さ（字数やボリューム）</li>
+                        <li>文体（親しみやすい、フォーマルなど）</li>
+                        <li>含めてほしい情報やキーワード</li>
+                        <li>参考にしてほしい事例やサイト</li>
+                    </ul>
+                </div>
+                
+                <p>
+                    何度も指示を出し直して、<span class="highlight">対話しながら完成度を高める</span>こともできますよ！
+                </p>
+            </div>
+            <div class="page-number">7/8</div>
+        </div>
+        
+        <!-- スライド8: まとめ -->
+        <div class="slide slide-5">
+            <div class="content">
+                <h2><span class="emoji-icon">🎁</span> まとめ：これからの可能性</h2>
+                
+                <p>
+                    生成AIは、私たちの<span class="highlight">「アイデアの実現を助けるパートナー」</span>です。
+                </p>
+                
+                <div class="feature-box">
+                    <div class="feature-item" style="background-color: #f0f9ff; width: 100%;">
+                        <h3>📚 これから一緒にできること</h3>
+                        <ul>
+                            <li>ブログ記事やSNS投稿文の作成</li>
+                            <li>商品説明やPR文の作成</li>
+                            <li>イベントレポートの下書き</li>
+                            <li>インタビュー記事の質問作成</li>
+                            <li>難しい内容をわかりやすく解説する記事</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="speech-bubble">
+                    <p>
+                        大切なのは、AIを<span class="highlight">「使いこなす」</span>こと。あなたのセンスや経験と組み合わせることで、もっと素敵な記事が生まれます！
+                    </p>
+                </div>
+                
+                <p style="text-align: center; margin-top: 30px; font-weight: bold;">
+                    さあ、みんなで一緒に新しい記事作りを始めましょう！<br>
+                    これからのアイデア、楽しみにしています 🎉
+                </p>
+            </div>
+            <div class="page-number">8/8</div>
+        </div>
+    </div>
+</body>
+</html>
